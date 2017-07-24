@@ -14,12 +14,11 @@
 
 @property (nonatomic, weak) id<WiiishInAppDelegate> delegate;
 
-+(WiiishManager*)sharedManager;
-
-+(void)initialize;
-+(void)displayWiiish;
-+(void)closeWiiish;
-+(void)updateTheme:(NSString*)newTheme;
++ (WiiishManager*)sharedManager;
++ (void)prime;
++ (void)displayWiiish;
++ (void)closeWiiish;
++ (void)updateTheme:(NSString*)newTheme;
 @end
 
 
@@ -28,7 +27,7 @@
 @protocol WiiishInAppDelegate <NSObject>
 
 @optional
--(void)wiiishViewDidOpen;
--(void)wiiishViewDidClose;
+- (void)wiiishViewDidOpen;
+- (void)wiiishViewDidClose;
 
 @end
