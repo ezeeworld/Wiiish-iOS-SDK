@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @protocol WiiishInAppDelegate;
 
@@ -17,8 +18,12 @@
 + (WiiishManager*)sharedManager;
 + (void)prime;
 + (void)displayWiiish;
++ (void)displayWiiishWithOrderId:(NSString*)orderId;
 + (void)closeWiiish;
 + (void)updateTheme:(NSString*)newTheme;
++ (BOOL)handleUrl:(NSURL*)url;
++ (void)setTitlebarColor:(UIColor*)newColor;
+    
 @end
 
 
