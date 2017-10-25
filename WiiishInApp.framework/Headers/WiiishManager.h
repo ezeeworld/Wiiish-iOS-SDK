@@ -23,7 +23,10 @@
 + (void)updateTheme:(NSString*)newTheme;
 + (BOOL)handleUrl:(NSURL*)url;
 + (void)setTitlebarColor:(UIColor*)newColor;
-    
+
++ (void)displayWiiishStatusWithOrderId:(NSString*)orderId;
++ (void)displayWiiishDetailWithOrderId:(NSString*)orderId;
++ (void)displayWiiishWithOrderId:(NSString*)orderId displayStatus:(BOOL)isStatus;
 @end
 
 
